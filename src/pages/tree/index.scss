@@ -1,0 +1,28 @@
+@import '../../utils/constant.scss';
+
+.index {
+  background: #eee;
+  border: 1px solid greenyellow;
+}
+.table {
+  display: table;
+  position: relative;
+}
+.tr {
+  display: table-row;
+  position: relative;
+}
+.td {
+  display: table-cell;
+}
+.td + .td > .table {
+  margin-left: 30rpx;
+}
+.vertical-line {
+  position: absolute;
+  height: 2rpx;
+  left: $person-width/2;
+  right: $person-width/2;
+  top: -35rpx;
+  background: grey;
+}

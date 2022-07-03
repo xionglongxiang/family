@@ -1,0 +1,54 @@
+@import '../../utils/constant.scss';
+
+.container {
+  display: inline-block;
+  position: relative;
+  height: $person-height;
+  width: $person-width;
+  margin-bottom: $person-margin-bottom;
+  text-align: center;
+  border: 1px solid green;
+}
+.bottom-line {
+  height: $person-bottom-line-height;
+  width: 2rpx;
+  background-color: grey;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+}
+.top-line {
+  height: $person-top-line-height;
+  width: 2rpx;
+  background-color: grey;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -100%);
+}
+.top-circle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -200%);
+  border: 1rpx solid grey;
+  height: 20rpx;
+  width: 20rpx;
+  font-size: 20rpx;
+  line-height: 20rpx;
+  border-radius: 50%;
+}
+
+.bottom-circle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 300%);
+  border: 1rpx solid grey;
+  height: 20rpx;
+  width: 20rpx;
+  font-size: 20rpx;
+  line-height: 20rpx;
+  border-radius: 50%;
+}
